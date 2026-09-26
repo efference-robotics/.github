@@ -1,0 +1,39 @@
+name: Task
+description: A bounded piece of work such as an investigation, a spike, a migration or a chore.
+body:
+  - type: textarea
+    id: goal
+    attributes:
+      label: Goal
+      description: What this task achieves and why it is needed now.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope
+      description: The steps or deliverables, in order where the order matters.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Observable checks or artifacts that decide when this is done.
+      placeholder: |
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: constraints
+    attributes:
+      label: Constraints
+      description: Limits on time, compute, licenses, hardware, or anything that must not change.
+    validations:
+      required: false
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+    validations:
+      required: false
