@@ -1,0 +1,42 @@
+name: Bug
+description: Something behaves differently from what it should.
+body:
+  - type: textarea
+    id: behaviour
+    attributes:
+      label: What happens
+      description: The observed behaviour, with exact error messages or output.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should happen
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: The smallest sequence of commands or inputs that shows the bug.
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: Observable checks that prove the bug is fixed, for example a test that fails today and passes after the fix.
+      placeholder: |
+        - [ ] ...
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Commit or version, operating system, hardware or simulator, and anything else that matters.
+    validations:
+      required: false
